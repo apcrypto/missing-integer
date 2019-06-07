@@ -1,14 +1,14 @@
 function solution(A) {
-        let min = 1
+        let num = 1
         A.sort(function(a,b){
            return a - b
         })
 
         for (let i in A) {
-            if (A[i] > -1 && A[i] === min) {
+            if (A[i] > -1 && A[i] === num) {
                     min++
             }
         }
 
-        return min
+        return num
 }
